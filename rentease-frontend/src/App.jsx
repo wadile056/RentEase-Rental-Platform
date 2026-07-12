@@ -2,23 +2,23 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import { useContext } from 'react';
 
 // Context Imports
-import { AuthContext } from './context/AuthContext';
+import { AuthContext } from './context/AuthContext.jsx';
 
 // Layout Component
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar.jsx';
 
 // Page Views Imports
-import Home from './pages/Home';
-import Catalog from './pages/Catalog';
-import ProductDetail from './pages/ProductDetail';
-import Cart from './pages/Cart';
-import Dashboard from './pages/Dashboard';
-import Login from './pages/Login';
-import Register from './pages/Register';
+import Home from './pages/Home.jsx'; 
+import Catalog from './pages/Catalog.jsx';
+import ProductDetail from './pages/ProductDetail.jsx';
+import Cart from './pages/Cart.jsx';
+import Dashboard from './pages/Dashboard.jsx'; 
+import Login from './pages/Login.jsx';
+import Register from './pages/Register.jsx'; 
 
 // Admin Page View Import
-import AdminDashboard from './pages/admin/AdminDashboard';
-import ProductManagement from './pages/admin/ProductManagement';
+import AdminDashboard from './pages/admin/AdminDashboard.jsx';
+import ProductManagement from './pages/admin/ProductManagement.jsx';
 
 // Secure Route Guard for Protected Customer Pages
 const ProtectedRoute = ({ children }) => {
